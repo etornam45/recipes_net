@@ -14,7 +14,7 @@
         <BbqStyle />
 
         <div class=" flex mx-auto">
-            <Button>Create Custom Recipe</Button>
+            <Button link="result">Create Custom Recipe</Button>
         </div>
     </div>
 </div>

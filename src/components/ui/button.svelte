@@ -1,4 +1,7 @@
-<button
+<script lang="ts">
+    export let link: string;
+</script>
+<a href="/#/{link}"
     class=
     {`
         mx-auto
@@ -12,4 +15,4 @@
     `}
 >
     <slot />
-</button>
+</a>

@@ -7,7 +7,7 @@
     let cuisine = ["Italian", "Mexican", "Chinese", "Japanese"];
 </script>
 
-<form class="rounded-xl border p-4 mt-20 " action="#" method="post">
+<form class="rounded-xl border p-4 mt-20 " method="post">
     <h2 class="text-blue-950 font-bold text-3xl">Make your selections</h2>
     <p class="py-3">
         Choose a protien, nutritional style, and cuisine to get started.
@@ -20,9 +20,9 @@
         <div class="py-5 lg:py-0"></div>
         <Select options={cuisine} />
 
-        <button type="submit" class="bg-blue-900 p-2.5 rounded-lg text-white font-bold">
+        <a href="/#/history" type="submit" class="bg-blue-900 p-2.5 rounded-lg text-white font-bold">
             Generate Recepes!
-        </button>
+        </a>
     </div>
 </form>
 <div class="p-10"></div>

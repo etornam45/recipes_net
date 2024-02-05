@@ -98,7 +98,7 @@
 <TabedResult ingredients={ingredients} directions={directions} {servings} />
 
 <div class="flex items-center justify-between py-5">
-    <Button>Save Recepe</Button>
+    <Button link="">Save Recepe</Button>
 </div>
 
 <EmailAuth />
