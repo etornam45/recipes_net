@@ -1,9 +1,9 @@
-
 <script lang="ts">
   import Option from "./option.svelte";
 
   let selectedOption = "";
   export let options: {name: string, icon: string}[] = [];
+  export let name: string;
 
   function handleSelection(value: string) {
     selectedOption = value;
@@ -15,6 +15,7 @@
     <Option
       value={option.name}
       icon={option.icon}
+      {name}
       selected={selectedOption === option.name}
       onSelection={handleSelection}
     />

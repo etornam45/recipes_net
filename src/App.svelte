@@ -5,6 +5,7 @@
   import Home from "./views/Home.svelte";
   import History from "./views/History.svelte";
   import Result from "./views/Result.svelte";
+    import { data_store } from "./lib/store";
 
   const routes = {
     "/": Home,
@@ -12,6 +13,8 @@
     "/result": Result,
     "*": Home,
   };
+
+  $: console.log($data_store);
 </script>
 
 <Header />

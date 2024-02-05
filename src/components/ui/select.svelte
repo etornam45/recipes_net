@@ -1,13 +1,14 @@
 <script lang="ts">
     export let options: string[] = [];
+    export let name: string;
 </script>
 
 <!-- Custorm select -->
 
 <div class="relative">
-    <select placeholder="Select a cuisine..." class="block ddd appearance-none w-full bg-white/25 border hover:border-gray-500 px-4 py-2.5 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+    <select placeholder="Select a cuisine..." {name} class="block ddd appearance-none w-full bg-white/25 border hover:border-gray-500 px-4 py-2.5 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
         {#each options as option}
-            <option class="p-2 m-3 appearance-none text-xl">{option}</option>
+            <option class="p-2 m-3 appearance-none">{option}</option>
         {/each}
     </select>
     <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">

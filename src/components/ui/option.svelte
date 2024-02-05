@@ -3,6 +3,7 @@
     export let selected: boolean = false;
     export let icon: string;
     export let onSelection: (value: string) => void;
+    export let name: string;
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
@@ -19,6 +20,7 @@
         type="radio"
         bind:group={selected}
         {value}
+        {name}
         class="absolute top-2 right-2"
     />
     <div class="min-w-28 flex gap-4">
