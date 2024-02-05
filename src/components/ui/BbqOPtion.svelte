@@ -11,7 +11,6 @@
 <label
     on:click={onClick}
     class:selected
-    for="{name}"
     class={`${
         selected && "bg-blue-100 border-blue-500"
     } relative w-full p-2.5 border-2 cursor-pointer rounded-lg`}
@@ -21,7 +20,7 @@
         type="radio"
         bind:group={selected}
         {name}
-        id="{name}"
+        value="{title}"
         class="absolute top-2 right-2"
     />
     <h2
@@ -33,7 +32,7 @@
 
 <style>
     .selected {
-        background-color: #f3f4f6;
+        background-color: #8ea5d3;
         border-color: #1351ad;
     }
 </style>
