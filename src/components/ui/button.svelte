@@ -1,0 +1,15 @@
+<button
+    class=
+    {`
+        mx-auto
+        px-10 py-2
+        rounded
+        text-white
+        transition
+        duration-300
+        ease-in-out
+        bg-blue-500
+    `}
+>
+    <slot />
+</button>
