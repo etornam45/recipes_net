@@ -23,6 +23,12 @@
         list-style: circle;
     }
 
+    @media (max-width: 768px) {
+        .ingredients {
+            grid-template-columns: 1fr;
+        }
+    }
+
     .ingredients li::marker {
         color: blue;
     }

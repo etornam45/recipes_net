@@ -1,9 +1,11 @@
 <script lang="ts">
+    import { nutritionalStyles, options } from "../lib/data";
+    import type { IOption } from "../lib/types";
     import Options from "./ui/options.svelte";
     import Select from "./ui/select.svelte";
 
-    let protien = ["Chicken", "Beef", "Pork", "Fish", "Tofu", "Tempeh"];
-    let nutritionalStyle = ["Keto", "Paleo", "Vegan", "Vegetarian"];
+    let protien: IOption[] = options
+    let nutritionalStyle = nutritionalStyles
     let cuisine = ["Italian", "Mexican", "Chinese", "Japanese"];
 </script>
 

@@ -15,7 +15,7 @@
 </script>
 
 <Header />
-<main class=" min-h-screen pb-11 container">
+<main class=" min-h-screen  mx-auto pb-11 container">
   <article class="max-w-[1000px] mx-auto">
     <Router {routes} />
   </article>

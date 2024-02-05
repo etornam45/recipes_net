@@ -20,3 +20,8 @@ export interface IIngredient {
 export interface IDirection {
     description: string;
 }
+
+export interface IOption{
+    name: string;
+    icon: string;
+}

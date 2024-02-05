@@ -25,7 +25,7 @@
         class="absolute top-2 right-2"
     />
     <h2
-        class=""
+        class="text-xl text-blue-900 font-bold"
     >{title}</h2>
     {description}
 </label>
