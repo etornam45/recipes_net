@@ -11,7 +11,7 @@
 
     function handleSubmit() {
         // using form data to get the selected values
-        const form = new FormData(document.querySelector("#form")); 
+        const form = new FormData(document.querySelector("#form") as HTMLFormElement); 
         const protien = form.get("protien");
         const nutrition = form.get("nutrition");
         const cuisine = form.get("cuisine");
