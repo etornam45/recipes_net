@@ -6,5 +6,6 @@ type Store = {
 
 
 export const data_store = writable<Store>({
-
 });
+
+export const is_all_selected = writable<boolean | null>(null);
