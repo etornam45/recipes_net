@@ -44,9 +44,9 @@
 
     <div class="flex flex-col gap-3">
         <Options options={protien} name="protien" />
-        <div class="py-5 lg:py-0"></div>
+        <div class="py-2 lg:py-0"></div>
         <Options options={nutritionalStyle} name="nutrition" />
-        <div class="py-5 lg:py-0"></div>
+        <div class="py-2 lg:py-0"></div>
         <Select options={cuisine} name="cuisine" />
 
         {#if $is_all_selected}

@@ -13,7 +13,7 @@
     class:selected
     class={`${
         selected && "bg-blue-100 border-blue-500"
-    } relative w-full p-2.5 flex gap-2 items-center justify-center border-2 cursor-pointer rounded-lg`}
+    } relative min-w-full sm:min-w-fit p-2.5 flex-1 flex gap-2 items-center justify-center border-2 cursor-pointer rounded-lg`}
 >
     <input
         required
