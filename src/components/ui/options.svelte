@@ -24,9 +24,6 @@
 
 
 <style>
-  .auto-grid{
-
-  }
   @media (min-width: 768px) {
     .auto-grid {
       display: grid;
