@@ -49,18 +49,23 @@
         <div class="py-5 lg:py-0"></div>
         <Select options={cuisine} name="cuisine" />
 
-        <a
-            href="/#/history"
-            type="submit"
-            on:click={(e) => {
-                if ($is_all_selected === true) {
-                    e.preventDefault();
-                }
-            }}
-            class="bg-blue-200 cursor-pointer {$is_all_selected === true ?  "inactive" : "active"} text-slate-800 p-2.5 rounded-lg text-center font-bold"
-        >
-            Generate Recepes!
-        </a>
+        {#if $is_all_selected}
+            <button
+                type="button"
+                class="bg-blue-400/35 text-white p-2.5 rounded-lg text-center font-bold"
+            >
+                Generate Recepes!
+            </button>
+        {/if}
+        {#if $is_all_selected === false}
+            <a
+                href="/#/history"
+                class="bg-blue-200 active text-slate-800 p-2.5 rounded-lg text-center font-bold"
+            >
+                Generate Recepes!
+            </a>
+        {/if}
+
         <!-- <button type="submit">
             Generate Recepes!
         </button> -->
@@ -70,7 +75,6 @@
 
 <style>
     .active {
-        pointer-events: none;
         background-color: #022979;
         color: white;
     }

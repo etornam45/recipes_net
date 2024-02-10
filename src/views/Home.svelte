@@ -27,7 +27,6 @@
     <AddBanner
         title="Welcome to Recepes.net"
         description="Get started by making your selections below. Choose a protien, nutritional style, and cuisine to get started. Get started by making your selections below. Choose a protien, nutritional style, and cuisine to get started. Get started by making your selections below. Choose a protien, nutritional style, and cuisine to get started. "
-        image="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/food-offer-banner-design-template-120969040f9a0d84860674d52de6cdbf_screen.jpg?ts=1625718735"
         link={social_links}
     />
     <Selector />

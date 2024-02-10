@@ -1,14 +1,27 @@
-<script lang="ts" >
+<script lang="ts">
+    import { generating, showing_form } from "../lib/store";
     import Buble from "./ui/buble.svelte";
+    import gen_image from "../assets/ai-generating-image.jpg";
+    import gen_image_mobile from "../assets/ai-generating-image-mobile.jpg";
 
     export let title: string;
     export let descriptions: string[];
-    export let image: string;
 </script>
 
-<div class="shared grid gap-5 my-8 " style="grid-template-columns: 250px 1fr;">
-    <div class="left overflow-hidden rounded-lg flex-1 w-[250px] h-[250px]" >
-        <img src="{image}" width="250" height="250" alt="{title}">
+<div class="shared grid gap-5 my-8">
+    <div
+        class="left overflow-hidden bg-slate-100 rounded-lg flex-1 min-h-[200px] flex justify-center items-center"
+    >
+        {#if !$generating}
+            <picture>
+                <source srcset={gen_image} media="(min-width: 768px)" />
+                <source srcset={gen_image_mobile} media="(max-width: 768px)" />
+                <img src={gen_image} class="w-full sm:w-[250px]" alt={title} />
+            </picture>
+        {/if}
+        {#if $generating}
+            Generating ...
+        {/if}
     </div>
     <div class="right">
         <div class="flex justify-between items-center">
@@ -18,7 +31,11 @@
                 <Buble value="Milk" color="black" />
             </div>
 
-            <button class=" p-1.5 px-6 bg-blue-800 rounded-lg text-white font-semibold">
+            <button
+                class=" p-1.5 px-6 bg-blue-800 rounded-lg text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={$generating}
+                on:click={() => showing_form.set(!$showing_form)}
+            >
                 Save Recipe
             </button>
         </div>
@@ -31,7 +48,7 @@
     </div>
 </div>
 
-<style >
+<style>
     .shared {
         grid-template-columns: 250px 1fr;
     }
@@ -39,6 +56,10 @@
     @media (max-width: 768px) {
         .shared {
             grid-template-columns: 1fr !important;
+        }
+
+        .shared img {
+            width: 100% !important;
         }
     }
     .shared img {

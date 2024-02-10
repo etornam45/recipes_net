@@ -2,24 +2,34 @@
     import FAQSection from "./ui/faq-section.svelte";
     let faqs: { title: string; description: string[] }[] = [
         {
-            title: "What is the best way to cook a steak?",
+            title: "Are the recipes any good?",
             description: [
-                "The best way to cook a steak is to use a cast iron skillet and cook it on high heat for 2 minutes on each side.",
-                "Then, put the skillet in the oven at 375 degrees for 5 minutes.",
+                `Surprisingly yes! Recipes.net users have gener-
+                ated close to 10,000 custom recipes and we
+                have personally cooked dozens of them. So far
+                our experience has been overwhelmingly posi-
+                tive with the recipes providing quick and easy
+                meal plans and new flavor combinations we
+                might not have considered otherwise.`,
+                `Feel free to check out our list of the Best AI
+                Generated Recipes or read more about our ex-
+                perience eating AI generated food.`,
             ],
         },
         {
-            title: "How do I make the perfect chocolate chip cookies?",
+            title: "What's the point of AI generated recipes?",
             description: [
-                "The perfect chocolate chip cookies are made with butter, brown sugar, and vanilla extract.",
-                "You should also use a mix of milk and dark chocolate chips.",
-            ],
-        },
-        {
-            title: "What is the best way to cook a steak?",
-            description: [
-                "The best way to cook a steak is to use a cast iron skillet and cook it on high heat for 2 minutes on each side.",
-                "Then, put the skillet in the oven at 375 degrees for 5 minutes.",
+                `Al generated recipes offer instant access to
+                personalized meal ideas that align with your
+                taste preferences or dietary requirements.`,
+                `No more meal monotony - Our recipe generator
+                puts a world of culinary variety at your finger-
+                tips, providing an unlimited supply of dishes to
+                ensure you never have to cook the same thing
+                twice. (Unless you want to!)`,
+                `These unique recipes provide a spark of inspira-
+                tion and are guaranteed to take the humdrum
+                out of your weekly meal planning!`
             ],
         },
         {

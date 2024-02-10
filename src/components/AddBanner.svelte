@@ -1,4 +1,7 @@
 <script lang="ts">
+    import gen_image from "../assets/ai-generating-image.jpg";
+    import gen_image_mobile from "../assets/ai-generating-image-mobile.jpg";
+
     type Link = {
         name: string;
         url: string;
@@ -6,16 +9,20 @@
     };
     export let title: string;
     export let description: string;
-    export let image: string;
     export let link: Link[];
 </script>
 
-<div class="bg-white mt-4 flex rounded-3xl overflow-hidden flex-col lg:flex-row">
-    <div class="rounded-xl overflow-hidden m-6 aspect-square w-[300px] bg-black/20">
-        <img
-            src={image}
-            alt={title}
-        />
+<div
+    class="bg-white mt-4 flex rounded-3xl overflow-hidden flex-col lg:flex-row"
+>
+    <div
+        class="rounded-xl overflow-hidden m-6 aspect-square bg-black/20"
+    >
+        <picture>
+            <source srcset={gen_image} media="(min-width: 768px)" />
+            <!-- <source srcset={gen_image_mobile} media="(max-width: 768px)" /> -->
+            <img src={gen_image} class="w-full sm:w-[250px]" alt={title} />
+        </picture>
     </div>
     <div class="p-6 w-full flex-1 flex-col justify-between h-full">
         <h1 class="text-2xl font-bold text-gray-900">{title}</h1>
