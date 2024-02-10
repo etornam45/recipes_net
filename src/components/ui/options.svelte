@@ -10,7 +10,7 @@
   }
 </script>
 
-<div class=" grid gap-3" style="grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">
+<div class="auto-grid gap-3">
   {#each options as option}
     <Option
       value={option.name}
@@ -21,3 +21,24 @@
     />
   {/each}
 </div>
+
+
+<style>
+  .auto-grid{
+
+  }
+  @media (min-width: 768px) {
+    .auto-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-auto-flow: row;
+    }
+  }
+
+  @media (max-width: 768px){
+    .auto-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+</style>
