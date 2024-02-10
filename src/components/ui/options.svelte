@@ -10,7 +10,7 @@
   }
 </script>
 
-<div class="flex items-center justify-between gap-3  flex-wrap lg:flex-nowrap">
+<div class=" grid gap-3" style="grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">
   {#each options as option}
     <Option
       value={option.name}

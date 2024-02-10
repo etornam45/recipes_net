@@ -11,7 +11,7 @@
         transition
         duration-300
         ease-in-out
-        bg-blue-500
+        bg-blue-900
     `}
 >
     <slot />
