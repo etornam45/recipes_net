@@ -1,6 +1,5 @@
 <script lang="ts">
     import gen_image from "../assets/ai-generating-image.jpg";
-    import gen_image_mobile from "../assets/ai-generating-image-mobile.jpg";
 
     type Link = {
         name: string;
@@ -33,6 +32,7 @@
             {#each link as item (item.url)}
                 <a
                     href={item.url}
+                    target="_blank"
                     class="text-blue-500 scale-75 hover:text-blue-600 flex items-center gap-2 mt-2"
                 >
                     {@html item.icon}

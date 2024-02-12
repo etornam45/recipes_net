@@ -2,12 +2,11 @@
     import AiBanner from "../components/AIBanner.svelte";
     import ShareBanner from "../components/ShareBanner.svelte";
     import TabedResult from "../components/TabedResult.svelte";
-    import Button from "../components/ui/button.svelte";
-    import EmailAuth from "../components/EmailAuth.svelte";
     import { _ingredients, _directions } from "../lib/data";
     import { onMount } from "svelte";
     import { generating } from "../lib/store";
     import Auth from "../components/Auth.svelte";
+    import BreadCrumb from "../components/ui/bread-crumb.svelte"
 
     let servings = 4;
     let ingredients = _ingredients;
@@ -20,7 +19,9 @@
     });
 </script>
 
-<AiBanner
+
+<BreadCrumb pathname="result"/>
+<AiBanner   
     title="AI Recepe Generator"
     description="Your Custorm AI Generated Recepe is Ready to be served"
 />

@@ -2,8 +2,11 @@
     import AiBanner from "../components/AIBanner.svelte";
     import BbqStyle from "../components/BbqStyle.svelte";
     import Button from "../components/ui/button.svelte";
+    import BreadCrumb from "../components/ui/bread-crumb.svelte"
 </script>
 
+
+<BreadCrumb pathname="history" />
 <div class="py-5">
     <AiBanner
         title="AI Generated Recipe"

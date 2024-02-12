@@ -65,10 +65,6 @@
                 Generate Recepes!
             </a>
         {/if}
-
-        <!-- <button type="submit">
-            Generate Recepes!
-        </button> -->
     </div>
 </form>
 <div class="p-10"></div>

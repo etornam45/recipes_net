@@ -15,7 +15,6 @@
     "*": Home,
   };
 
-  $: console.log($data_store, $is_all_selected);
 
   onMount(() => {
     is_all_selected.update((data) => {
