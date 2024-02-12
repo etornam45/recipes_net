@@ -7,6 +7,7 @@
   import Result from "./views/Result.svelte";
   import { data_store, is_all_selected } from "./lib/store";
   import { onMount } from "svelte";
+    import ScrollUp from "./components/ui/scroll-up.svelte";
 
   const routes = {
     "/": Home,
@@ -38,4 +39,5 @@
     <Router {routes} />
   </article>
 </main>
+<ScrollUp />
 <Footer />

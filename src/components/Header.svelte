@@ -3,6 +3,7 @@
     import Menu from "./icons/menu.svelte";
     import SubTitle from "./icons/sub-title.svelte";
     import User from "./icons/user.svelte";
+    import Logo from "./ui/logo.svelte";
     type Link = { name: string; url: string };
 
     const links: Link[] = [
@@ -25,12 +26,7 @@
             class="top py-2 flex justify-between sm:justify-evenly items-center"
         >
             <div class="logo">
-                <h1
-                    class="text-blue-900 font-bold text-xl flex items-center gap-3"
-                >
-                    <SubTitle />
-                    Recepes.<span class="font-light">net</span>
-                </h1>
+                <Logo />
             </div>
             <div class="left items-center hidden lg:flex">
                 <div
