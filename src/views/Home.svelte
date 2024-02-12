@@ -17,9 +17,14 @@
             icon: `<img width="48" height="48" src="https://img.icons8.com/fluency/48/twitter.png" alt="twitter"/>`,
         },
         {
-            name: "instagram",
-            url: `instagram://library?LocalIdentifier=${location.href}`,
-            icon: `<img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>`,
+            name: "pinterest",
+            url: 'http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' + encodeURIComponent(document.title),
+            icon: `<img width="48" height="48" src="https://img.icons8.com/color/48/pinterest.png" alt="pinterest"/>`,
+        },
+        {
+            name: "whatsapp",
+            url: 'whatsapp://send?text='+encodeURIComponent(document.title)+'%20 '+encodeURIComponent(document.URL),
+            icon: `<img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>`,
         },
     ];
 </script>
